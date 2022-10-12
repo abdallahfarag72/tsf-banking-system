@@ -1,0 +1,65 @@
+// rem has better support for accessability
+html {
+    font-size: 62.5%; //working with rems in a base 10 system just like pixels 
+}
+
+body {
+    color: $dark-grey;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
+    // min-height: 100vh;
+    // min-height: 100vh;
+    margin: 0;
+    // position: relative;
+    // display: flex;
+    // flex-direction: column;
+}
+
+.page-container {
+    // flex: 1;
+    min-height: calc(100vh - 166px);
+    @media (max-width: $desktop-breakpoint) {
+        min-height: calc(100vh - 149.2px);
+    }
+}
+
+
+// body:not(.hamburger) {
+//     position: relative;
+// }
+
+// body::after {
+//     content: '';
+//     display: block;
+//     height: 58px;
+//     /* Set same as footer's height */
+// }
+
+
+
+// #root {
+//     // min-height: 100vh;
+//     // position: relative;
+//     // padding-bottom: 20px;
+//     // min-height: calc(100vh - 60px);
+// }
+
+// preventing the animation from firing at page load
+body.preload * {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+}
