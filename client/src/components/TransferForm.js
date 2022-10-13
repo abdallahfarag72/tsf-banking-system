@@ -1,8 +1,6 @@
 import React, { useState } from "react"
-import { Navigate, useSearchParams } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
-import { useDispatch, useSelector } from "react-redux"
-import { getCustomers, updateCustomers } from "../actions/customers"
+import { useDispatch } from "react-redux"
+import { updateCustomers } from "../actions/customers"
 import { addTransfer } from "../actions/transfers"
 import TransferModal from "./TransferModal"
 import moment from "moment";
@@ -14,10 +12,8 @@ const TransferForm = (props) => {
     const [amount, setAmount] = useState('')
     const [error, setError] = useState('')
     const [modalOpen, setModalOpen] = useState(false)
-    const [createdAt, setCreatedAt] = useState('')
     
     const dispatch = useDispatch()
-    const navigate = useNavigate()
 
     const receiverInfo = props.customers.find(customer => receiver === customer._id) || ''
     const receiverName = receiverInfo.name
@@ -49,8 +45,7 @@ const TransferForm = (props) => {
                 amount,
                 createdAt: moment().valueOf()
             }))
-            // navigate('/customers')
-            // dispatch(getCustomers())
+            
             setModalOpen(true)
         }
     }

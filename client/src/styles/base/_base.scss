@@ -8,42 +8,15 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
     line-height: 1.6;
-    // min-height: 100vh;
-    // min-height: 100vh;
     margin: 0;
-    // position: relative;
-    // display: flex;
-    // flex-direction: column;
 }
 
 .page-container {
-    // flex: 1;
     min-height: calc(100vh - 166px);
     @media (max-width: $desktop-breakpoint) {
         min-height: calc(100vh - 149.2px);
     }
 }
-
-
-// body:not(.hamburger) {
-//     position: relative;
-// }
-
-// body::after {
-//     content: '';
-//     display: block;
-//     height: 58px;
-//     /* Set same as footer's height */
-// }
-
-
-
-// #root {
-//     // min-height: 100vh;
-//     // position: relative;
-//     // padding-bottom: 20px;
-//     // min-height: calc(100vh - 60px);
-// }
 
 // preventing the animation from firing at page load
 body.preload * {

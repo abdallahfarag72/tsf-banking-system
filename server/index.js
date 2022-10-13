@@ -18,6 +18,11 @@ app.use(cors())
 app.use('/customers', customersRouter)
 app.use('/transfers', transfersRouter)
 
+app.get('/', (req, res) => {
+    res.send('Hello to Banking System API')
+})
+
+
 const PORT = process.env.PORT || 5000
 
 mongoose.connect(process.env.CONNECTION_URL)

@@ -1,6 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { getTransfers } from "../actions/transfers";
 import TransfersList from "./TransfersList";
 
 const AllTransfersPage = () => {

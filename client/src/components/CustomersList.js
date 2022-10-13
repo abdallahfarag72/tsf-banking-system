@@ -1,19 +1,10 @@
-import React, { useReducer, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import CustomersListItem from "./CustomersListItem";
-import customersReducer from "../reducers/customers";
-import { getCustomers } from "../actions/customers"
 import { useSelector } from "react-redux";
 
 const CustomersList = () => {
-    // const dispatch = useDispatch()
-
-    // useEffect(() => {
-    //     dispatch(getCustomers())
-    // }, [])
-
     const customers = useSelector(state => state.customers)
-    console.log(customers);
+    
     return (
         <div className="content-container">
             <div className="list-header" >

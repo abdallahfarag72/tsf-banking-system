@@ -1,8 +1,4 @@
 .home-img {
-    // max-width: 50%;
-    // height: auto;
-    // width: auto;
-    // object-fit: cover;
     max-width: 500px;
     max-height: 400px;
     min-width: 200px;
@@ -39,9 +35,6 @@ body .container .card {
     position: relative;
     min-width: 279px;
     height: 411px;
-    // box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    //     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    //     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     margin: 10px -8px;
     transition: 0.5s;
@@ -50,18 +43,6 @@ body .container .card {
     }
 }
 
-// .card-button {
-//     background: $blue;
-//     font-size: x-large;
-// }
-
-// body .container .card:nth-child(2) .box .content a {
-//     background: #e91e63;
-// }
-
-// body .container .card:nth-child(3) .box .content a {
-//     background: #23c186;
-// }
 
 body .container .card .box {
     position: absolute;
@@ -69,7 +50,6 @@ body .container .card .box {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    // background: rgb(139, 135, 142);
     background: $grey;
     border-radius: 15px;
     display: flex;

@@ -11,6 +11,7 @@ import CustomersPage from "../components/CustomersPage";
 import TransferPage from "../components/TransferPage";
 import AboutPage from "../components/AboutPage";
 import AllTransfersPage from "../components/AllTransfersPage";
+import NotFoundPage from "../components/NotFoundPage";
 
 
 export const history = createBrowserHistory()
@@ -26,12 +27,13 @@ const AppRouter = () => {
     return (
     <BrowserRouter>
         <Header />
-        <Routes className="app">
+        <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/customers' element={<CustomersPage />} />
             <Route path='/customers/:id' element={<TransferPage />} />
             <Route path='/all-transfers' element={<AllTransfersPage />} />
             <Route path='/about' element={<AboutPage />} />
+            <Route path='*' element={<NotFoundPage />} />
         </Routes>
         <Footer />
     </BrowserRouter>

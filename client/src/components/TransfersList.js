@@ -1,5 +1,4 @@
-import React, { useReducer, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import TransfersListItem from "./TransfersListItem";
 import { useSelector } from "react-redux";
 
