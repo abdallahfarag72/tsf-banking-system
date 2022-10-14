@@ -9,7 +9,7 @@ const Header = () => {
     return (
     <header className="header">
         <div className="content-container">
-            <h1 className="header__title">Banking App</h1>
+            <h1 className="header__title">Banking System</h1>
             <div className={
                     isNavExpanded ? "header__navbar expanded" : "header__navbar"
              }>
