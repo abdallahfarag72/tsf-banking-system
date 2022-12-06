@@ -41,7 +41,6 @@
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "dev-server": "webpack serve --mode development",
-    "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
   "eslintConfig": {
